@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/contextSwitch.js"></script>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Frontend Mentor | Time tracking dashboard</title>
+	</head>
+	<body class="content">
+		<main>
+			<section class="card profile">
+				<div class="profile__upper">
+					<img
+						class="profile-picture max-width-30"
+						src="images/image-jeremy.png"
+						alt="user profile"
+					/>
+					<div class="center-content">
+						<p>Report for</p>
+						<h1>Jeremy Robson</h1>
+					</div>
+				</div>
+				<span class="card__lower flex d-flex-column">
+					<p id="daily" class="contextSwitcher interactive">Daily</p>
+					<p id="weekly" class="contextSwitcher interactive active">Weekly</p>
+					<p id="monthly" class="contextSwitcher interactive">Monthly</p>
+				</span>
+			</section>
+
+			<section class="card time-card work">
+				<div class="card__lower">
+					<span class="flex">
+						<h4>Work</h4>
+						<i class="fa-solid fa-ellipsis interactive"></i>
+					</span>
+					<span class="daily flex d-flex-column hidden">
+						<h2>5hrs</h2>
+						<p>Yesterday - 7hrs</p>
+					</span>
+					<span class="weekly flex d-flex-column">
+						<h2>32hrs</h2>
+						<p>Last Week - 36hrs</p>
+					</span>
+					<span class="monthly flex d-flex-column hidden">
+						<h2>103hrs</h2>
+						<p>Last Month - 128hrs</p>
+					</span>
+				</div>
+			</section>
+
+			<section class="card time-card play">
+				<div class="card__lower">
+					<span class="flex">
+						<h4>Play</h4>
+						<i class="fa-solid fa-ellipsis interactive"></i>
+					</span>
+					<span class="daily flex d-flex-column hidden">
+						<h2>1hrs</h2>
+						<p>Yesterday - 2hrs</p>
+					</span>
+					<span class="weekly flex d-flex-column">
+						<h2>10hrs</h2>
+						<p>Last Week - 8hrs</p>
+					</span>
+					<span class="monthly flex d-flex-column hidden">
+						<h2>23hrs</h2>
+						<p>Last Month - 29hrs</p>
+					</span>
+				</div>
+			</section>
+
+			<section class="card time-card study">
+				<div class="card__lower">
+					<span class="flex">
+						<h4>Study</h4>
+						<i class="fa-solid fa-ellipsis interactive"></i>
+					</span>
+					<span class="daily flex d-flex-column hidden">
+						<h2>0hrs</h2>
+						<p>Yesterday - 1hrs</p>
+					</span>
+					<span class="weekly flex d-flex-column">
+						<h2>4hrs</h2>
+						<p>Last Week - 7hrs</p>
+					</span>
+					<span class="monthly flex d-flex-column hidden">
+						<h2>13hrs</h2>
+						<p>Last Month - 19hrs</p>
+					</span>
+				</div>
+			</section>
+
+			<section class="card time-card exercise">
+				<div class="card__lower">
+					<span class="flex">
+						<h4>Exercise</h4>
+						<i class="fa-solid fa-ellipsis interactive"></i>
+					</span>
+					<span class="daily flex d-flex-column hidden">
+						<h2>1hrs</h2>
+						<p>Yesterday - 1hrs</p>
+					</span>
+					<span class="weekly flex d-flex-column">
+						<h2>4hrs</h2>
+						<p>Last Week - 5hrs</p>
+					</span>
+					<span class="monthly flex d-flex-column hidden">
+						<h2>11hrs</h2>
+						<p>Last Month - 18hrs</p>
+					</span>
+				</div>
+			</section>
+
+			<section class="card time-card social">
+				<div class="card__lower">
+					<span class="flex">
+						<h4>Social</h4>
+						<i class="fa-solid fa-ellipsis interactive"></i>
+					</span>
+					<span class="daily flex d-flex-column hidden">
+						<h2>1hrs</h2>
+						<p>Yesterday - 3hrs</p>
+					</span>
+					<span class="weekly flex d-flex-column">
+						<h2>5hrs</h2>
+						<p>Last Week - 10hrs</p>
+					</span>
+					<span class="monthly flex d-flex-column hidden">
+						<h2>21hrs</h2>
+						<p>Last Month - 23hrs</p>
+					</span>
+				</div>
+			</section>
+
+			<section class="card time-card selfcare">
+				<div class="card__lower">
+					<span class="flex">
+						<h4>Self Care</h4>
+						<i class="fa-solid fa-ellipsis interactive"></i>
+					</span>
+					<span class="flex d-flex-column hidden">
+						<h2>0hrs</h2>
+						<p>Yesterday - 1hrs</p>
+					</span>
+					<span class="flex d-flex-column">
+						<h2>2hrs</h2>
+						<p>Last Week - 2hrs</p>
+					</span>
+					<span class="flex d-flex-column hidden">
+						<h2>7hrs</h2>
+						<p>Last Month - 11hrs</p>
+					</span>
+				</div>
+			</section>
+		</main>
+
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</footer>
+	</body>
+</html>
